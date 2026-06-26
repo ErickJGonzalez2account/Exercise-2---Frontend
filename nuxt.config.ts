@@ -16,11 +16,11 @@ export default defineNuxtConfig({
   },
 
   runtimeConfig: {
-    public: {
-      apiUrl: 'http://localhost:3001',
-      authToken: 'token-secreto-sorah'
-    }
-  },
+  public: {
+    apiUrl: '',
+    authToken: 'token-secreto-sorah'
+  }
+},
 
   components: [
     { path: '~/components', pathPrefix: false }
