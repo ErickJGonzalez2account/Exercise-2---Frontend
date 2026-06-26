@@ -6,6 +6,10 @@ export default defineNuxtConfig({
 
   css: ['~/assets/css/main.css'],
 
+  nitro: {
+    preset: 'node-server'
+  },
+
   app: {
     head: {
       title: 'Gestión de Tareas — Erick J.',
@@ -16,11 +20,11 @@ export default defineNuxtConfig({
   },
 
   runtimeConfig: {
-  public: {
-    apiUrl: '',
-    authToken: 'token-secreto-sorah'
-  }
-},
+    public: {
+      apiUrl: '',
+      authToken: 'token-secreto-sorah'
+    }
+  },
 
   components: [
     { path: '~/components', pathPrefix: false }
